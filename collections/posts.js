@@ -11,7 +11,7 @@ Meteor.methods({
 
     // ensure that the post has a title
     if(!postAttributes.title)
-      throw new Meteor(422, "Please fill in a headline");
+      throw new Meteor.Error(422, "Please fill in a headline");
 
     // check  that there are no previous posts with the same link
     if (postAttributes.url  && postWithSameLink)

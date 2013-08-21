@@ -2,6 +2,6 @@ Meteor.publish('posts', function() {
 	return Posts.find();
 });
 
-Meteor.publish('commments', function() {
+Meteor.publish('comments', function() {
   return Comments.find();
 });

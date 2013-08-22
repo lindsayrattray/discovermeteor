@@ -10,7 +10,13 @@
       <div class="nav-collapse collapse">
         <ul class="nav">
           {{#if currentUser}}
-            <li><a href="{{postSubmitPath}}">New</a></li>
+            <li>
+              <a href="{{postSubmitPath}}">New</a>
+            </li>
+            <li>
+            <li class="dropdown">
+              {{> notifications}}
+            </li>
           {{/if}}
         </ul>
         <ul class="nav pull-right">
